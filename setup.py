@@ -10,7 +10,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 setup(
     name='jmms.calculadora',
     version='v0.0.3',
-    description='Example to test package with a Calculator',
+    description='Example to test package with a Calculator in organization',
     long_description=long_description,
     url='https://nexus/jmms/pysaurio',
     author='Jose Miguel Mirana',
