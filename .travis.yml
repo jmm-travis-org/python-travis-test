@@ -1,0 +1,16 @@
+language: python
+python:
+- '2.7'
+install:
+- pip install -r requirements.txt
+script:
+- pytest
+- python setup.py sdist
+deploy:
+  provider: releases
+  api_key:
+    secure: Fmpa0MWG3JQQEK+tJlo/Qh+xDd5vML6mBdo6XZUQ/BI2i1kFwBl+7c27jALujwmyjUw1f2X6yZetAyJxxwTPU70P87pPdUBCmNVhh1gmUYrFTHZsXMdSwF8eilaXNne0k8o9JDE90PmzSxZinW9dxDv7wxl9Ui5MMQslmJjYShm1sfDyH8Lkf8XEi05nQ9CsnxXtbh0Lj7PkbrT4hH+IzKh6eB4Sgb+hq+G2L2uQLLdPGh5qBSNXhxeu5D5oAaIsMhlwLM5u1LA6lrU7cSGHyvO/Ws+rUbmizvvi5smKiN/cd7g8Qfa/uZa6ElRSsA8tZBvcW/SrPbQ+IYrXJ7OAG+vnwIV0m9FBLx3W2U3PD9b1hdpfd5QbCyffUTw2lvn5lI2Q0xO7Bs9NbzsUD+wF1F/HWrJrbZJDY9vK4JA9DL4Yuc9C6BmdhBMVY+2zhdGFb8M4/yWjjqeEDMhDm8cMzDzmDKkJiqH3eJlKltollNQ4aRIrbBH5BHyBvMz+RdicMZ0QhWyQ19vmCkHrPvXgxk5QJRcGFP7DlYTRct1l+zFPCHKL3BXnlgxNr8lbjBlxGt3szspnupcBjl0dKoREQRQzwL7AmHQRoDekxm6BoMn4Ppx1KY3Mh9m4TYY9mc0ocSnHByHJQ9UO+rJg0BVORTyb0zmSZsSnH7spzJPKx3k=
+  file: dist/jmms.calculadora-v0.0.3.tar.gz
+  on:
+    repo: jmm-travis-org/python-travis-test
+    branch: master

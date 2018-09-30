@@ -1,0 +1,4 @@
+.idea/**/*
+jmms.calculadora.egg-info/**/*
+dist/**/*
+**/*.pyc
