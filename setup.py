@@ -24,7 +24,7 @@ setup(
         'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
         'Programming Language :: Python :: 3',
     ],
-    keywords='jmms test calculator',
+    keywords='jmms2 test calculator',
     packages=['jmms'],
     package_dir = {'jmmms':'jmms'},
 )
