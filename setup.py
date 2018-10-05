@@ -8,7 +8,7 @@ here = path.abspath(path.dirname(__file__))
 with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
-strVersion = "0.0.4"
+strVersion = os.environ["JMMS_CALC_VERSION"]
 
 setup(
     name='jmms.calculadora',
@@ -32,7 +32,7 @@ setup(
     package_dir = {'jmmms':'jmms'},
 )
 
-os.environ["JMMS_CALC_VERSION"] = "v" + strVersion
-os.environ["JMMS_CALC_PACKAGE_PATH"] = "dist/jmms.calculadora-" + strVersion  +".tar.gz"
+
+os.environ[
 
 print ("Variable JMMS_CALC_VERSION =" + os.environ["JMMS_CALC_VERSION"])
