@@ -33,6 +33,4 @@ setup(
 )
 
 
-os.environ[
-
 print ("Variable JMMS_CALC_VERSION =" + os.environ["JMMS_CALC_VERSION"])
