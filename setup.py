@@ -1,18 +1,18 @@
 from setuptools import setup
 from codecs import open
 from os import path
-from os import environ
+import os
 
 here = path.abspath(path.dirname(__file__))
 
 with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
-strVersion = "v0.0.4"
+strVersion = "0.0.4"
 
 setup(
     name='jmms.calculadora',
-    version=strVersion,
+    version="v" + strVersion,
     description='Example to test package with a Calculator in organization',
     long_description=long_description,
     url='https://nexus/jmms/pysaurio',
@@ -32,4 +32,7 @@ setup(
     package_dir = {'jmmms':'jmms'},
 )
 
-environ["JMMS_CALC_VERSION"] = strVersion
+os.environ["JMMS_CALC_VERSION"] = "v" + strVersion
+os.environ["JMMS_CALC_PACKAGE_PATH"] = "dist/jmms.calculadora-" + strVersion  +".tar.gz"
+
+print ("Variable JMMS_CALC_VERSION =" + os.environ["JMMS_CALC_VERSION"])
