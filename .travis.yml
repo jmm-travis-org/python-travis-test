@@ -1,6 +1,6 @@
 language: python
 env:
-  - JMMS_CALC_VERSION="0.0.5" JMMS_CALC_PACKAGE_PATH="dist/jmms.calculadora-${JMMS_CALC_VERSION}.tar.gz"
+  - JMMS_CALC_VERSION="0.0.5" JMMS_CALC_PACKAGE_PATH="dist/jmms.calculadora-$JMMS_CALC_VERSION.tar.gz"
 python:
   - '2.7'
 install:
