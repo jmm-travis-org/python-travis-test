@@ -4,6 +4,8 @@ from os import path
 import os
 
 
+strVersion = os.environ["JMMS_CALC_VERSION"]
+
 here = path.abspath(path.dirname(__file__))
 
 with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
@@ -11,7 +13,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='jmms.calculadora',
-    version='v0.0.3',
+    version='v' + strVersion,
     description='Example to test package with a Calculator in organization',
     long_description=long_description,
     url='https://nexus/jmms/pysaurio',
