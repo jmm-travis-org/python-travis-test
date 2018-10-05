@@ -10,7 +10,8 @@ before_deploy:
   # Set up git user name and tag this commit
   - git config --local user.name "jmmirand"
   - git config --local user.email "jmmmirand@gmail.com"
-  - git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
+  #- git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
+  - git tag "$JMMS_CALC_VERSION"
 deploy:
   provider: releases
   api_key:
