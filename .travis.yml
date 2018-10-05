@@ -13,3 +13,4 @@ deploy:
   file: dist/jmms.calculadora-0.0.3.tar.gz
   on:
     repo: jmm-travis-org/python-travis-test
+    tags: true
