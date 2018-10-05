@@ -1,6 +1,6 @@
 language: python
 env:
-  - JMMS_CALC_VERSION="0.0.5" JMMS_CALC_PACKAGE_PATH="dist/jmms.calculadora-$JMMS_CALC_VERSION.tar.gz"
+  - JMMS_CALC_VERSION="0.0.5" 
 python:
   - '2.7'
 install:
@@ -18,7 +18,7 @@ deploy:
   provider: releases
   api_key:
     secure: Avn9U8akCoOARssWByFQi1EcSg3FTmsGychfQ3oQq7ycHlHXVwcasn9afMqb4yvloqAu6EMYle2hK2zH2HlTHQDffEfxvlFmny4IuRVuDxAQIsRGrPkDRUcWi0Z/F2IcTKP9kkh40aJJ1z3y18TUV5JutiNMxHhvDGVCpM7+cTpYkO6+UasCG1HyNJMtHX64J2t9d/jnTAZb/y9OsfaIxnHjf/1QovrSGiQcoHPtRrGiMLOhOmkcu9G6Ucdxp9J9KJtF7T5x8ZsjwcAN7V39btqjLE56aOnFMZOKNM7OXe+pfrTPL8B6BvtoihquXKYkwKC+0Vv4dCdLHmxY4YyLzGry8tqxjgMNc4sRmpTjI4hU4pqlSJ4uDbF24UgO2iUv63rGhqHtPiu9ku4eD3aAllXshKuZQ1thjb7y0ntveJh4ky8oAOxRK47pmqkyvxse0bmSU++JyCrUl+YDDYtBdli/W+zFXjpdaOaVSTawapbU+rlm3y+RGSM1g5KRn0OZM0Jd1JdENSUmkf13dezWgX5KQ3pzR0BfhWhGgkeK5YIY+jxXKOJdtvoQtfgaOmZ8UBNyiNsk0+4c1OdvICT0fldwY8pOmdl3M6MJyJJ5GRTLA64Wa2ojahxKFMrorQrHcREGVe160JH/XZyLV4eU51ZeEzR33d8VtVAvpUE5QZo=
-  file: $JMMS_CALC_PACKAGE_PATH
+  file: "dist/jmms.calculadora-${JMMS_CALC_VERSION}.tar.gz"
   skip_cleanup: true
   on:
     repo: jmm-travis-org/python-travis-test
